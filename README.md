@@ -35,3 +35,9 @@ Rename the following files
 //return Text("Music");  
 return Song(song: list[index]);
 ```
+
+Add this line in song.dart File in the onTap: () => {*insert line here*} function
+```
+Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => SongMenu(list: list, index: index))),
+```
